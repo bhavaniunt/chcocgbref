@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Delights</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #f2994a, #fcab0e);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #333;
+      margin-right: 1rem;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      color: #f2994a;
+    }
+
+    .main {
+      padding: 2rem;
+    }
+
+    .chocolate-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .chocolate-card {
+      width: 25%;
+      margin-bottom: 1rem;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .chocolate-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .chocolate-card h3 {
+      margin: 1rem 0;
+      font-weight: bold;
+    }
+
+    /* Improved button style with good contrast */
+    .chocolate-card button {
+      background: #fcab0e;
+      color: #333; /* Dark contrasting color */
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .chocolate-card button:hover {
+      background: #e68a00;
+    }
+
+    .cart-section {
+      background: #fff;
+      padding: 1rem;
+      margin-top: 2rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-section h2 {
+      margin-bottom: 1rem;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .cart-item p {
+      margin: 0;
+    }
+
+    .cart-total {
+      font-weight: bold;
+    }
+
+    .empty-cart {
+      text-align: center;
+      color: #aaa;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="header">
+    <a href="#">Chocolate Delights</a>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#" onclick="showCart()">Cart</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main class="main" id="main">
+    <h1>Our Delicious Chocolates</h1>
+    <section class="chocolate-section">
+      <div class="chocolate-card">
+        <img src="images/milk-chocolate.jpg" alt="Milk Chocolate">
+        <h3>Milk Chocolate</h3>
+        <button onclick="addToCart
